@@ -1,10 +1,10 @@
 version: '3.1'
 
 services:
-  otusdb:
-    image: mysql:8.0.15
+  mysql8:
+    image: mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_ROOT_PASSWORD=my_sql
     command: 
       --init-file /init.sql
     volumes:
